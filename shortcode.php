@@ -5,9 +5,8 @@
  */
 class shortcode {
 		
-	//Upon first run shortcode will generate a scrambled set of alphabets for you. if you ever want to rescramble, just set $rescramble to true in scrambles.php
 	public function __construct() {
-		//Nothing really needed to do here yet, maybe down the line with scrambled alphabets loaded from an external include.
+		//Nothing really needed to do here yet, maybe down the line with externally loaded alphabets
 	}
 	
 	public function charMap() {
@@ -16,7 +15,7 @@ class shortcode {
 		return $charList;
 	}
 	
-	//IT IS ADVISE YOU RUN THIS METHOD AND COPY/PASTE THE OUTPUT TO THE getScramble METHOD!!!
+	//IT IS ADVISED YOU RUN THIS METHOD AND COPY/PASTE THE OUTPUT TO THE getScramble METHOD!!!
 	//P.S. Ensure $charList in the charMap method has only characters you want in it.
 	public function reScramble() {
 		$chars = $this->charmap();
